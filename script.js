@@ -1,7 +1,7 @@
 function getComputerChoice(){
     let randomNumber = Math.random();
     let randomChoice
-    if (randomNumber <1/3) {
+    if (randomNumber < 1/3) {
         randomChoice = "Rock"
     }else if (randomNumber >= 1/3 && randomNumber < 2/3) {
         randomChoice = "Paper"
@@ -13,3 +13,11 @@ function getComputerChoice(){
 }
 
 getComputerChoice();
+
+function getHumanChoice(){
+    randomChoice = prompt("What is your Choice? Rock, Paper or Scissors?");
+
+    console.log(randomChoice);
+}
+
+getHumanChoice();
